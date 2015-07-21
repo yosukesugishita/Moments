@@ -68,6 +68,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MomentsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Fonts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Setup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ConnectivityService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />

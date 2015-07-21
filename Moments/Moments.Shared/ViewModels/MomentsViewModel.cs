@@ -4,9 +4,6 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using Connectivity.Plugin;
-using Acr.UserDialogs;
-
 namespace Moments
 {
 	public class MomentsViewModel : BaseViewModel
@@ -47,8 +44,7 @@ namespace Moments
 
 			try
 			{
-				var connected = await CrossConnectivity.Current.IsRemoteReachable (Keys.ApplicationMobileService, 80, 10000);
-				if (connected) {
+				if (await ConnectivityService.IsConnected ()) {
 					Moments.Clear ();
 					var refreshedMoments = await MomentService.Instance.GetMoments ();
 					Moments.AddRange (refreshedMoments);

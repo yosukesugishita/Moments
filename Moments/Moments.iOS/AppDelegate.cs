@@ -6,8 +6,9 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-using Microsoft.WindowsAzure.MobileServices;
+using Acr.UserDialogs;
 using ImageCircle.Forms.Plugin.iOS;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace Moments.iOS
 {
@@ -18,11 +19,11 @@ namespace Moments.iOS
 		{
 			Forms.Init ();
 			ImageCircleRenderer.Init ();
+			UserDialogs.Init ();
 			CurrentPlatform.Init ();
 			LoadApplication (new App ());
 
 			Setup.Init ();
-
 			SetupThirdPartyLibraries ();
 
 			return base.FinishedLaunching (app, options);

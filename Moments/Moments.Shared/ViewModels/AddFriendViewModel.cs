@@ -2,9 +2,6 @@ using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using Acr.UserDialogs;
-using Connectivity.Plugin;
-
 namespace Moments
 {
 	public class AddFriendViewModel : BaseViewModel
@@ -33,9 +30,8 @@ namespace Moments
 
 			try
 			{
-				var connected = await CrossConnectivity.Current.IsRemoteReachable (Keys.ApplicationMobileService, 80, 10000);
-				if (connected) {
-					DialogService.ShowLoading (Strings.AddingFriend);
+				DialogService.ShowLoading (Strings.AddingFriend);
+				if (await ConnectivityService.IsConnected ()) {
 					var success = await CreateFriendship ();
 					DialogService.HideLoading ();
 					if (success) {

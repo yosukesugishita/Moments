@@ -5,8 +5,6 @@ using System.IO;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using Connectivity.Plugin;
-
 namespace Moments
 {
 	public class SendMomentViewModel : BaseViewModel
@@ -49,9 +47,8 @@ namespace Moments
 
 			try 
 			{
-				var connected = await CrossConnectivity.Current.IsRemoteReachable (Keys.ApplicationMobileService, 80, 10000);
-				if (connected) {
-					DialogService.ShowLoading (Strings.SendingMoment);
+				DialogService.ShowLoading (Strings.SendingMoment);
+				if (await ConnectivityService.IsConnected ()) {
 					var success = await SendImage ();
 					DialogService.HideLoading ();
 					if (success) {

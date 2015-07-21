@@ -4,8 +4,6 @@ using System.Threading.Tasks;
 using Xamarin;
 using Xamarin.Forms;
 
-using Connectivity.Plugin;
-
 namespace Moments
 {
 	public class SignUpViewModel : BaseViewModel
@@ -75,9 +73,8 @@ namespace Moments
 		
 			try
 			{
-				var connected = await CrossConnectivity.Current.IsRemoteReachable (Keys.ApplicationMobileService, 80, 10000);
-				if (connected) {
-					DialogService.ShowLoading (Strings.CreatingAccount);
+				DialogService.ShowLoading (Strings.CreatingAccount);
+				if (await ConnectivityService.IsConnected ()) {
 					await CreateAccount (account, user);
 					DialogService.HideLoading ();
 

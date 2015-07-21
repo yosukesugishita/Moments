@@ -5,8 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-using Connectivity.Plugin;
-
 namespace Moments
 {
 	public class FriendRequestsViewModel : BaseViewModel
@@ -42,8 +40,7 @@ namespace Moments
 
 			try
 			{
-				var connected = await CrossConnectivity.Current.IsRemoteReachable (Keys.ApplicationMobileService, 80, 10000);
-				if (connected) {
+				if (await ConnectivityService.IsConnected ()) {
 					await FriendService.Instance.RefreshPendingFriendsList ();
 				} else {
 					DialogService.ShowError (Strings.NoInternetConnection);
