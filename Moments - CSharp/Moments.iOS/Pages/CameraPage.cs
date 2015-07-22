@@ -33,15 +33,16 @@ namespace Moments.iOS
 
 			SetupUserInterface ();
 			SetupEventHandlers ();
-			SetupLiveCameraStream ();
+
 			AuthorizeCameraUse ();
+			SetupLiveCameraStream ();
 		}
 
 		public override void ViewDidAppear (bool animated)
 		{
 			base.ViewDidAppear (animated);
 
-			SetupLiveCameraStream ();
+			UIApplication.SharedApplication.ApplicationIconBadgeNumber = 0;
 		}
 
 		public async void AuthorizeCameraUse ()
@@ -83,7 +84,13 @@ namespace Moments.iOS
 			var videoConnection = stillImageOutput.ConnectionFromMediaType (AVMediaType.Video);
 			var sampleBuffer = await stillImageOutput.CaptureStillImageTaskAsync (videoConnection);
 
+			// var jpegImageAsBytes = AVCaptureStillImageOutput.JpegStillToNSData (sampleBuffer).ToArray ();
 			var jpegImageAsNsData = AVCaptureStillImageOutput.JpegStillToNSData (sampleBuffer);
+			// var image = new UIImage (jpegImageAsNsData);
+			// var image2 = new UIImage (image.CGImage, image.CurrentScale, UIImageOrientation.UpMirrored);
+			// var data = image2.AsJPEG ().ToArray ();
+
+			// SendPhoto (data);
 			SendPhoto (jpegImageAsNsData.ToArray ());
 		}
 

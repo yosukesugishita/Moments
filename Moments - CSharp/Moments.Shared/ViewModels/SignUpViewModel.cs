@@ -76,10 +76,11 @@ namespace Moments
 				DialogService.ShowLoading (Strings.CreatingAccount);
 				if (await ConnectivityService.IsConnected ()) {
 					await CreateAccount (account, user);
-					DialogService.HideLoading ();
 
 					await SignIn (account);
 					NavigateToMainUI ();
+
+					DialogService.HideLoading ();
 				} else {
 					DialogService.ShowError (Strings.NoInternetConnection);
 				}
