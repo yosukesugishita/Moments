@@ -1,10 +1,11 @@
 using System;
-using CoreGraphics;
 using System.IO;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 using AVFoundation;
+using CoreGraphics;
 using Foundation;
 using UIKit;
 
@@ -216,7 +217,7 @@ namespace Moments.iOS
 			};
 		}
 
-		public async void SendPhoto (byte[] image)
+		public async Task SendPhoto (byte[] image)
 		{
 			var navigationPage = new NavigationPage (new DrawMomentPage (image)) {
 				BarBackgroundColor = Colors.NavigationBarColor,
