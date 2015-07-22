@@ -2,6 +2,7 @@
 
 namespace Moments
 {
+	// TODO: Insert relevant keys from Azure and Xamarin Insights
 	public class Keys
 	{
 		public static readonly string ApplicationURL = "";
