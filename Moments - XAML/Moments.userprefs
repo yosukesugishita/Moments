@@ -1,33 +1,6 @@
 ﻿<Properties StartupItem="Moments.iOS/Moments.iOS.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Android4.4Doe" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Moments.Droid/Pages/CameraPage.cs">
-    <Files>
-      <File FileName="Moments.iOS/obj/iPhone/Debug/SendMomentPage.xaml.g.cs" Line="17" Column="26" />
-      <File FileName="Moments.Shared/Views/SendMomentPage.xaml" Line="2" Column="10" />
-      <File FileName="Moments.iOS/obj/iPhone/Debug/MomentsPage.xaml.g.cs" Line="17" Column="26" />
-      <File FileName="Moments.Shared/Views/MomentsPage.xaml" Line="19" Column="11" />
-      <File FileName="Moments.Shared/Views/FriendsPage.xaml" Line="19" Column="11" />
-      <File FileName="Moments.iOS/obj/iPhone/Debug/FriendRequestsPage.xaml.g.cs" Line="17" Column="26" />
-      <File FileName="Moments.Shared/Views/FriendRequestsPage.xaml" Line="19" Column="11" />
-      <File FileName="Moments.iOS/Pages/BasePage.cs" Line="18" Column="134" />
-      <File FileName="Moments.Shared/Views/BasePage.xaml.cs" Line="11" Column="3" />
-      <File FileName="Moments.Shared/Views/SendMomentPage.xaml.cs" Line="20" Column="3" />
-      <File FileName="Moments.Shared/Views/MomentsPage.xaml.cs" Line="20" Column="51" />
-      <File FileName="Moments.Shared/Views/FriendRequestsPage.xaml.cs" Line="27" Column="8" />
-      <File FileName="Moments.Shared/Views/DrawMomentPage.cs" Line="1" Column="1" />
-      <File FileName="Moments.Shared/App.xaml.cs" Line="86" Column="1" />
-      <File FileName="Moments.Shared/Views/ProfilePage.xaml" Line="5" Column="2" />
-      <File FileName="Moments.Shared/Views/ProfilePage.xaml.cs" Line="32" Column="44" />
-      <File FileName="Moments.Shared/Views/CameraPage.xaml" Line="5" Column="11" />
-      <File FileName="Moments.Shared/Views/CameraPage.xaml.cs" Line="8" Column="44" />
-      <File FileName="Moments.Shared/Views/AboutPage.xaml" Line="10" Column="28" />
-      <File FileName="Moments.Shared/Views/AboutPage.xaml.cs" Line="13" Column="4" />
-      <File FileName="Moments.iOS/Main.cs" Line="14" Column="1" />
-      <File FileName="Moments.Shared/Helpers/Info.cs" Line="1" Column="1" />
-      <File FileName="Moments.Shared/Helpers/Strings.cs" Line="12" Column="33" />
-      <File FileName="Moments.Droid/Pages/CameraPage.cs" Line="13" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.4" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
