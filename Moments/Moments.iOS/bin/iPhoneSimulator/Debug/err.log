@@ -1,0 +1,12 @@
+2015-07-12 09:39:27.452 MomentsiOS[5553:1240369] MonoTouch: Socket error while connecting to MonoDevelop on 127.0.0.1:10000: Connection refused
+2015-07-12 09:39:30.707 MomentsiOS[5553:1240332] warning: Symbol file /Users/yosukesugishita/Library/Developer/CoreSimulator/Devices/21693810-5E78-4C51-9559-516A0BB7BE51/data/Containers/Bundle/Application/B29B012D-A28C-4893-8302-8179F5908748/MomentsiOS.app/Akavache.Sqlite3.dll.mdb doesn't match image (null)
+2015-07-12 09:39:31.476 MomentsiOS[5553:1240332] Unhandled managed exception:
+ApiKey is empty (Xamarin.InsightsCore.InvalidInitialization)
+  at Xamarin.InsightsCore.Core.Initialize (System.String clientApiKey) [0x00000] in <filename unknown>:0 
+  at Xamarin.Insights.Initialize (System.String apiKey) [0x00000] in <filename unknown>:0 
+  at Moments.iOS.AppDelegate.SetupThirdPartyLibraries () [0x00006] in /Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.iOS/AppDelegate.cs:33 
+  at Moments.iOS.AppDelegate.FinishedLaunching (UIKit.UIApplication app, Foundation.NSDictionary options) [0x0001b] in /Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.iOS/AppDelegate.cs:24 
+  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, IntPtr principal, IntPtr delegate) [0x00005] in /Users/builder/data/lanes/1503/e6ebd18b/source/maccore/src/UIKit/UIApplication.cs:63 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0001c] in /Users/builder/data/lanes/1503/e6ebd18b/source/maccore/src/UIKit/UIApplication.cs:46 
+  at Moments.iOS.Application.Main (System.String[] args) [0x00008] in /Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.iOS/Main.cs:14 

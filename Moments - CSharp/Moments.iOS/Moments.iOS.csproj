@@ -71,9 +71,9 @@
     <ConsolePause>false</ConsolePause>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <BuildIpa>true</BuildIpa>
-    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Developer: Yosuke Sugishita (JZ244425V5)</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignProvision>fbe47e10-9ed0-4b00-aa3a-0e3668396fcb</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>full</DebugType>

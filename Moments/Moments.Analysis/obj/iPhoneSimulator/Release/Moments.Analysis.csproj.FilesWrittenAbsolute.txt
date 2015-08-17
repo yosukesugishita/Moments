@@ -1,0 +1,5 @@
+/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Analysis/obj/iPhoneSimulator/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Analysis/bin/Release/Moments.Analysis.exe.mdb
+/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Analysis/bin/Release/Moments.Analysis.exe
+/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Analysis/obj/iPhoneSimulator/Release/Moments.Analysis.exe
+/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Analysis/obj/iPhoneSimulator/Release/Moments.Analysis.exe.mdb

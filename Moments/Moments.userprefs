@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Droid/MainActivity.cs" line="19" column="1" />
+      <Breakpoint file="/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Droid/MainActivity.cs" line="24" column="1" />
+      <Breakpoint file="/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Droid/MainActivity.cs" line="38" column="1" />
+      <Breakpoint file="/Users/yosukesugishita/Desktop/Moments_fork/Moments/Moments.Droid/MainActivity.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <StartupItems>
+    <String>Moments.Droid/Moments.Droid.csproj</String>
+    <String>Moments.iOS/Moments.iOS.csproj</String>
+  </StartupItems>
+</Properties>
